@@ -1,0 +1,97 @@
+---
+---
+<style>
+  .testimonials-container {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .testimonials-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 3rem;
+  }
+
+  .testimonials-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .testimonial-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  .testimonial-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonial-card .rating {
+    color: #ffbc00;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .testimonials-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<section class="testimonials-container">
+  <h2 class="testimonials-title">What Our Users Are Saying</h2>
+
+  <div class="testimonials-cards">
+    <div class="testimonial-card">
+      <img src="https://via.placeholder.com/80" alt="User 1" />
+      <h3>John Doe</h3>
+      <p>"I’ve been using this calendar for months now, and it has transformed how I manage my events. The interface is clean, and it’s super easy to use."</p>
+      <div class="rating">★★★★★</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://via.placeholder.com/80" alt="User 2" />
+      <h3>Jane Smith</h3>
+      <p>"The Pro Plan is a game changer for my team. We can collaborate, schedule events, and set reminders all in one place. Highly recommend it!"</p>
+      <div class="rating">★★★★★</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://via.placeholder.com/80" alt="User 3" />
+      <h3>Mike Johnson</h3>
+      <p>"As a busy professional, this calendar has helped me organize my life. I love the ease of use and the powerful features it offers."</p>
+      <div class="rating">★★★★★</div>
+    </div>
+  </div>
+</section>

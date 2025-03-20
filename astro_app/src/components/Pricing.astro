@@ -1,0 +1,115 @@
+---
+---
+<section class="pricing-container">
+  <div class="pricing-card">
+    <h2>Basic Plan</h2>
+    <div class="price">$9.99/month</div>
+    <ul>
+      <li>1 User</li>
+      <li>10 Events/month</li>
+      <li>Basic Support</li>
+      <li>Basic Calendar Features</li>
+    </ul>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+
+  <div class="pricing-card">
+    <h2>Pro Plan</h2>
+    <div class="price">$19.99/month</div>
+    <ul>
+      <li>5 Users</li>
+      <li>Unlimited Events</li>
+      <li>Priority Support</li>
+      <li>Advanced Calendar Features</li>
+      <li>Custom Event Reminders</li>
+    </ul>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+
+  <div class="pricing-card">
+    <h2>Enterprise Plan</h2>
+    <div class="price">$49.99/month</div>
+    <ul>
+      <li>Unlimited Users</li>
+      <li>Unlimited Events</li>
+      <li>24/7 Premium Support</li>
+      <li>All Advanced Features</li>
+      <li>Custom Integrations</li>
+    </ul>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+</section>
+
+<style>
+  .pricing-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .pricing-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .pricing-card h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  .pricing-card .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4CAF50;
+    margin-bottom: 1.5rem;
+  }
+
+  .pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .pricing-card ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+
+  .pricing-card .buy-btn {
+    padding: 0.75rem 2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .pricing-card .buy-btn:hover {
+    background-color: #388E3C;
+  }
+
+  @media screen and (max-width: 768px) {
+    .pricing-container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

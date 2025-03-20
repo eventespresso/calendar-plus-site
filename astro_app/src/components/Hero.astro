@@ -1,0 +1,109 @@
+---
+/* No need for props here, everything is static */
+import CImage from '../assets/calendar.png'
+---
+
+<section class="hero">
+  <div class="hero-container">
+    <!-- Left Section with Title and Description -->
+    <div class="hero-text">
+      <h1 class="hero-title">Managing Your Events Has Never Been Easier</h1>
+    <p class="hero-description">
+       Say goodbye to missed events and double bookings! Our Calendar lets you organize, plan, and manage your schedule seamlessly, so you can stay on top of everything. With the all-new <strong>Wish Event Calendar</strong>, you can now easily mark your desired events, get reminders, and prioritize your plans like never before. Whether it's a meeting, birthday, or special occasion, planning your life has never been so simple and efficient.
+    </p>
+      <a href="#" class="cta-button">Read More.</a>
+    </div>
+
+    <!-- Right Section with Image -->
+    <div class="hero-image">
+      <img src={CImage.src} alt="Product Image" class="hero-img" width={570} height={470} />
+    </div>
+  </div>
+
+  <style scoped>
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 20px;
+      background-color: #f7f7f7;
+    }
+
+    .hero-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .hero-text {
+      max-width: 50%;
+      padding-right: 20px;
+    }
+
+    .hero-title {
+      font-size: 48px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .hero-description {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: 600;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+
+    .hero-image {
+      max-width: 50%;
+    }
+
+    .hero-img {
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .hero-img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .hero-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-text {
+        max-width: 100%;
+        text-align: center;
+        padding-right: 0;
+      }
+
+      .hero-image {
+        max-width: 100%;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</section>

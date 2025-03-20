@@ -1,0 +1,86 @@
+---
+import logo from '../assets/astro.svg'; 
+---
+
+<div class="auto-nav">
+  <div class="auto-nav-logo">
+      <h3>Calendar Plus</h3>
+  </div>
+  <ul class="auto-nav-menu">
+    <li><a href="#">Intro</a></li>
+    <li><a href="#">Features</a></li>
+    <li><a href="#">Use Cases</a></li>
+    <li><a href="#">Pricing</a></li>
+  </ul>
+  <div class="auto-nav-login">
+    <a href="#">Contact Sales</a>
+  </div>
+</div>
+
+
+<style>
+.auto-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.auto-nav-logo img {
+  height: 32px;
+  width: auto;
+}
+
+/* Menu Styles */
+.auto-nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.auto-nav-menu li {
+  font-size: 16px;
+}
+
+.auto-nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.auto-nav-menu a:hover {
+  color: #007BFF;
+}
+
+/* Login Styles */
+.auto-nav-login a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.auto-nav-login a:hover {
+  color: #007BFF;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .auto-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .auto-nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}
+
+</style>
