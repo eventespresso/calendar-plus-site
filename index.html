@@ -1,275 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="title" content="Calendar+ - Events Calendar Plugin for WordPress">
-  <meta name="description" content="Display a beautiful and modern event calendar on your WordPress website with categories, filters, and different views.">
-  <title>Calendar+ - Events Calendar Plugin for WordPress</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 60px;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    .gradient-title {
-      background: linear-gradient(to right, #4b0082, #00ffff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      color: transparent;
-    }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      padding: 20px;
-    }
-    h1 {
-      font-size: 4em;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    p.description {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .image-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.5em;
-      }
-      .container {
-        padding: 15px;
-      }
-      .image-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    .image-block {
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    .image-block img {
-		width: 100%;
-  height: auto;
-  border-radius: 8px;
-  padding: 2px;
-  background: linear-gradient(to right, #4b0082, #00ffff);
-  border: 2px solid transparent;
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-    }
-    .image-caption {
-      margin-top: 10px;
-      font-style: italic;
-      font-size: 0.95em;
-    }
-    .logo {
-      text-align: center;
-      margin-bottom: 20px;
-      padding-top: 30px;
-    }
-
-    .logo img {
-      max-width: 200px;
-      height: auto;
-    }
-    .download-button {
-      display: block;
-      width: fit-content;
-      margin: 20px auto;
-      padding: 10px 20px;
-      background-color: #000000;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .download-button:hover {
-      background-color: #6f6f6f;
-    }
-
-	.features-panel {
-  background-color: #e8f0fe; /* light blue */
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  color: #000000;
-}
-.features-panel ul {
-  padding-left: 20px;
-}
-.features-panel li {
-  margin-bottom: 8px;
-}
-
-.screenshots-panel {
-  background-color: #ebebeb; /* soft yellow */
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  color: #000000;
-}
-.screenshots-panel ul {
-  padding-left: 20px;
-}
-.screenshots-panel li {
-  margin-bottom: 8px;
-}
-
-.instructions-panel {
-  background-color: #e8ffe8; /* mint green */
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  color: #000000;
-}
-.instructions-panel ul {
-  padding-left: 20px;
-}
-.instructions-panel li {
-  margin-bottom: 8px;
-}
-  </style>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="title" content="Calendar+ - Events Calendar Plugin for WordPress">
+	<meta name="description"
+		  content="Display a beautiful and modern event calendar on your WordPress website with categories, filters, and different views."
+	>
+	<title>Calendar+ - Events Calendar Plugin for WordPress</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="scripts.js" defer></script>
 </head>
 <body>
-  <div class="logo">
-    <img src="assets/logo.webp" alt="Site Logo" />
-  </div>
-  <h1 class="gradient-title">Calendar+</h1>
-  <p class="description">Display a beautiful events calendar with customizable views, coloring, filtering, date formats, images, and optimized for mobile on your own WordPress website.
-</p>
-<a href="https://my.eventespresso.com/wp-content/uploads/2025/03/events-calendar-plus-1.0.1.001.zip" class="download-button">Download Calendar+ for WordPress</a>
-<div class="features-panel">
-<h2>⭐️ Features</h2>
-<ul>
-  <li>Quickly create events (Title, start/end date/time, description, featured image)</li>
-  <li>Enable or disable views with tooltips (month, week, day views, each mobile optimized)</li>
-  <li>Filters (keyword, venue, category, tag, location)</li>
-  <li>Edit text strings for easy translation</li>
-  <li>Enable/Disable display view settings</li>
-  <li>Set Default view</li>
-  <li>Keep/hide filters on mobile devices</li>
-  <li>Enable/Disable thumbnails on the calendar</li>
-  <li>Enable/Disable Tooltip/Popover</li>
-  <li>Edit text labels (easy translation)</li>
-  <li>Choose from multiple date/time formats</li>
-  <li>Easily personalize your calendar with over 20 customizable color settings using the built-in color picker</li>
-  <li>Compatible with Event Espresso Decaf and Premium (<a href="https://downloads.wordpress.org/plugin/event-espresso-decaf.5.0.37.decaf.zip">download Event Espresso Decaf</a> <strong>⬇️</strong>)</li>
-  <li>and more!</li>
-</ul>
+<a id="top"></a>
+<header>
+	<nav>
+		<h2><a href="#top">Events Calendar Plus</a></h2>
+		<ul>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#screenshots">Screenshots</a></li>
+			<li><a href="#instructions">Instructions</a></li>
+		</ul>
+	</nav>
+</header>
+<section class="hero container">
+	<div class="hero__text">
+		<div class="logo">
+			<img src="assets/logo.webp" alt="Site Logo"/>
+		</div>
+		<h1 class="gradient-title">Events Calendar Plus</h1>
+		<p class="description">
+			A beautiful WordPress events calendar with customizable views, coloring, filtering, date formats, and
+			images. Fully optimized for mobile.
+		</p>
+		<a href="https://my.eventespresso.com/wp-content/uploads/2025/03/events-calendar-plus-1.0.1.001.zip"
+		   class="download-button"
+		>Download Calendar+ for WordPress
+		</a>
+	</div>
+	<div class="hero__image">
+		<img src="assets/screenshot-1.webp" alt="Calendar+ Month View Desktop Layout." height="497.2" width="631.2"/>
+	</div>
+</section>
+<a id="features" class="anchor"></a>
+<section class="features-panel container panel">
+	<h2>⭐️ Features</h2>
+	<ul>
+		<li>Quickly create events (Title, start/end date/time, description, featured image)</li>
+		<li>Enable or disable views with tooltips (month, week, day views, each mobile optimized)</li>
+		<li>Filters (keyword, venue, category, tag, location)</li>
+		<li>Edit text strings for easy translation</li>
+		<li>Enable/Disable display view settings</li>
+		<li>Set Default view</li>
+		<li>Keep/hide filters on mobile devices</li>
+		<li>Enable/Disable thumbnails on the calendar</li>
+		<li>Enable/Disable Tooltip/Popover</li>
+		<li>Edit text labels (easy translation)</li>
+		<li>Choose from multiple date/time formats</li>
+		<li>Easily personalize your calendar with over 20 customizable color settings using the built-in color picker
+		</li>
+		<li>Compatible with Event Espresso Decaf and Premium (
+			<a href="https://downloads.wordpress.org/plugin/event-espresso-decaf.5.0.37.decaf.zip">download Event
+																								   Espresso Decaf
+			</a>
+			<strong>⬇️</strong>)
+		</li>
+		<li>and more!</li>
+	</ul>
+</section>
+<a id="screenshots" class="anchor"></a>
+<section class="screenshots-panel container panel">
+	<h2>🤩 Screenshots</h2>
+	<div class="image-grid">
+		<div class="image-block">
+			<img src="assets/screenshot-1.webp" alt="Calendar+ Month View Desktop Layout." class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">Calendar+ Month View Desktop Layout.</div>
+		</div>
+		<div class="image-block">
+			<img src="assets/screenshot-2.webp" alt="Calendar+ Month View Tooltip." class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">Calendar+ Month View Tooltip.</div>
+		</div>
+		<div class="image-block">
+			<img src="assets/screenshot-3.webp" alt="Calendar+ Month View Mobile Layout" class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">Calendar+ Month View Mobile Layout.</div>
+		</div>
+		<div class="image-block">
+			<img src="assets/screenshot-4.webp" alt="Calendar+ Month View Desktop Hover." class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">alendar+ Month View Desktop Hover.</div>
+		</div>
+		<div class="image-block">
+			<img src="assets/screenshot-5.webp" alt="Calendar+ Month View Desktop Modal Popup." class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">Calendar+ Month View Desktop Modal Popup.</div>
+		</div>
+		<div class="image-block">
+			<img src="assets/screenshot-6.webp" alt="Calendar+ Month View Desktop with Filters." class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">Calendar+ Month View Desktop with Filters.</div>
+		</div>
+		<div class="image-block">
+			<img src="assets/screenshot-7.webp" alt="Calendar+ Agenda View Desktop with Filters." class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">CCalendar+ Agenda View Desktop with Filters.</div>
+		</div>
+		<div class="image-block">
+			<img src="assets/screenshot-8.webp" alt="Calendar+ Agenda View Desktop with Filtered." class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">Calendar+ Agenda View Desktop with Filtered.</div>
+		</div>
+		<div class="image-block">
+			<img src="assets/screenshot-9.webp" alt="Calendar+ Single Event Details View." class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">Calendar+ Single Event Details View..</div>
+		</div>
+		<div class="image-block">
+			<img src="assets/screenshot-10.webp" alt="Calendar+ WordPress Custom Post Type." class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">Calendar+ WordPress Custom Post Type.</div>
+		</div>
+		<div class="image-block">
+			<img src="assets/screenshot-11.webp" alt="Calendar+ Add New Event." class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">Calendar+ Add New Event.</div>
+		</div>
+		<div class="image-block">
+			<img src="assets/screenshot-12.webp" alt="Calendar+ Calendar View Settings." class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">Calendar+ Calendar View Settings.</div>
+		</div>
+		<div class="image-block">
+			<img src="assets/screenshot-13.webp" alt="Calendar+ Text Label Settings." class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">Calendar+ Text Label Settings.</div>
+		</div>
+		<div class="image-block">
+			<img src="assets/screenshot-14.webp" alt="Calendar+ Date Format Settings." class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">Calendar+ Date Format Settings.</div>
+		</div>
+		<div class="image-block">
+			<img src="assets/screenshot-15.webp" alt="Calendar+ Colors & Styles Settings." class="thumbnail" tabindex="0" /
+				 tabindex="0">
+			<div class="image-caption">Calendar+ Colors & Styles Settings.</div>
+		</div>
+	</div>
+</section>
+<a id="instructions" class="anchor"></a>
+<section class="instructions-panel container panel">
+	<h2>🛠️ Instructions</h2>
+	<h4>From WordPress Dashboard:</h4>
+	<ul>
+		<li>Go to Plugins &gt; Add New, search for Calendar+, and click Install</li>
+		<li>Activate the plugin</li>
+	</ul>
+	<h4>Manual Installation:</h4>
+	<ul>
+		<li>Download the plugin ZIP file</li>
+		<li>Go to Plugins &gt; Add New &gt; Upload Plugin, select the ZIP file, and click Install Now</li>
+		<li>Activate the plugin</li>
+	</ul>
+	<p>That's it! Just configure your settings as you see fit, and you're on your way to creating events in style.</p>
+	<h4>Display the Calendar+ Calendar:</h4>
+	<ul>
+		<li>To display a calendar, add the <strong><code>[CALENDAR_PLUS]</code></strong> shortcode on any WordPress page
+			or post.
+		</li>
+	</ul>
+</section>
+<footer class="container">
+	<a href="https://my.eventespresso.com/wp-content/uploads/2025/03/events-calendar-plus-1.0.1.001.zip"
+	   class="download-button"
+	>Download Calendar+ for WordPress
+	</a>
+	<h3>Calendar+ is brought to you by the makers of
+		<a href="https://eventespresso.com">Event Espresso</a>
+		and
+		<a href="https://eventsmart.com">Event Smart</a>
+		.
+	</h3>
+</footer>
+<div class="popover__container">
+	<div class="popover">
+		<button class="close-popover">X</button>
+		<div class="popover__image">
+			<img src="assets/screenshot-1.webp" alt="Calendar+ Month View Desktop Layout." />
+			<div class="popover__caption">Calendar+ Month View Desktop Layout.</div>
+		</div>
+		<div class="popover__image">
+			<img src="assets/screenshot-2.webp" alt="Calendar+ Month View Tooltip." />
+			<div class="popover__caption">Calendar+ Month View Tooltip.</div>
+		</div>
+		<div class="popover__image">
+			<img src="assets/screenshot-3.webp" alt="Calendar+ Month View Mobile Layout" />
+			<div class="popover__caption">Calendar+ Month View Mobile Layout.</div>
+		</div>
+		<div class="popover__image">
+			<img src="assets/screenshot-4.webp" alt="Calendar+ Month View Desktop Hover." />
+			<div class="popover__caption">alendar+ Month View Desktop Hover.</div>
+		</div>
+		<div class="popover__image">
+			<img src="assets/screenshot-5.webp" alt="Calendar+ Month View Desktop Modal Popup." />
+			<div class="popover__caption">Calendar+ Month View Desktop Modal Popup.</div>
+		</div>
+		<div class="popover__image">
+			<img src="assets/screenshot-6.webp" alt="Calendar+ Month View Desktop with Filters." />
+			<div class="popover__caption">Calendar+ Month View Desktop with Filters.</div>
+		</div>
+		<div class="popover__image">
+			<img src="assets/screenshot-7.webp" alt="Calendar+ Agenda View Desktop with Filters." />
+			<div class="popover__caption">CCalendar+ Agenda View Desktop with Filters.</div>
+		</div>
+		<div class="popover__image">
+			<img src="assets/screenshot-8.webp" alt="Calendar+ Agenda View Desktop with Filtered." />
+			<div class="popover__caption">Calendar+ Agenda View Desktop with Filtered.</div>
+		</div>
+		<div class="popover__image">
+			<img src="assets/screenshot-9.webp" alt="Calendar+ Single Event Details View." />
+			<div class="popover__caption">Calendar+ Single Event Details View..</div>
+		</div>
+		<div class="popover__image">
+			<img src="assets/screenshot-10.webp" alt="Calendar+ WordPress Custom Post Type." />
+			<div class="popover__caption">Calendar+ WordPress Custom Post Type.</div>
+		</div>
+		<div class="popover__image">
+			<img src="assets/screenshot-11.webp" alt="Calendar+ Add New Event." />
+			<div class="popover__caption">Calendar+ Add New Event.</div>
+		</div>
+		<div class="popover__image">
+			<img src="assets/screenshot-12.webp" alt="Calendar+ Calendar View Settings." />
+			<div class="popover__caption">Calendar+ Calendar View Settings.</div>
+		</div>
+		<div class="popover__image">
+			<img src="assets/screenshot-13.webp" alt="Calendar+ Text Label Settings." />
+			<div class="popover__caption">Calendar+ Text Label Settings.</div>
+		</div>
+		<div class="popover__image">
+			<img src="assets/screenshot-14.webp" alt="Calendar+ Date Format Settings." />
+			<div class="popover__caption">Calendar+ Date Format Settings.</div>
+		</div>
+		<div class="popover__image">
+			<img src="assets/screenshot-15.webp" alt="Calendar+ Colors & Styles Settings." />
+			<div class="popover__caption">Calendar+ Colors & Styles Settings.</div>
+		</div>
+	</div>
 </div>
-<div class="screenshots-panel">
-<h2>🤩 Screenshots</h2>
-  <div class="image-grid">
-    <div class="image-block">
-      <img src="assets/screenshot-1.webp" alt="Calendar+ Month View Desktop Layout." />
-      <div class="image-caption">Calendar+ Month View Desktop Layout.</div>
-    </div>
-
-    <div class="image-block">
-      <img src="assets/screenshot-2.webp" alt="Calendar+ Month View Tooltip." />
-      <div class="image-caption">Calendar+ Month View Tooltip.</div>
-    </div>
-
-    <div class="image-block">
-      <img src="assets/screenshot-3.webp" alt="Calendar+ Month View Mobile Layout" />
-      <div class="image-caption">Calendar+ Month View Mobile Layout.</div>
-    </div>
-
-    <div class="image-block">
-      <img src="assets/screenshot-4.webp" alt="Calendar+ Month View Desktop Hover." />
-      <div class="image-caption">alendar+ Month View Desktop Hover.</div>
-    </div>
-
-    <div class="image-block">
-      <img src="assets/screenshot-5.webp" alt="Calendar+ Month View Destop Modal Popup." />
-      <div class="image-caption">Calendar+ Month View Destop Modal Popup.</div>
-    </div>
-
-    <div class="image-block">
-      <img src="assets/screenshot-6.webp" alt="Calendar+ Month View Destop with Filters." />
-      <div class="image-caption">Calendar+ Month View Destop with Filters.</div>
-    </div>
-
-    <div class="image-block">
-      <img src="assets/screenshot-7.webp" alt="Calendar+ Agenda View Destop with Filters." />
-      <div class="image-caption">CCalendar+ Agenda View Destop with Filters.</div>
-    </div>
-
-    <div class="image-block">
-      <img src="assets/screenshot-8.webp" alt="Calendar+ Agenda View Destop with Filtered." />
-      <div class="image-caption">Calendar+ Agenda View Destop with Filtered.</div>
-    </div>
-
-    <div class="image-block">
-      <img src="assets/screenshot-9.webp" alt="Calendar+ Single Event Details View." />
-      <div class="image-caption">Calendar+ Single Event Details View..</div>
-    </div>
-
-    <div class="image-block">
-      <img src="assets/screenshot-10.webp" alt="Calendar+ WordPress Custom Post Type." />
-      <div class="image-caption">Calendar+ WordPress Custom Post Type.</div>
-    </div>
-
-    <div class="image-block">
-      <img src="assets/screenshot-11.webp" alt="Calendar+ Add New Event." />
-      <div class="image-caption">Calendar+ Add New Event.</div>
-    </div>
-
-    <div class="image-block">
-      <img src="assets/screenshot-12.webp" alt="Calendar+ Calendar View Settings." />
-      <div class="image-caption">Calendar+ Calendar View Settings.</div>
-    </div>
-
-    <div class="image-block">
-      <img src="assets/screenshot-13.webp" alt="Calendar+ Text Label Settings." />
-      <div class="image-caption">Calendar+ Text Label Settings.</div>
-    </div>
-
-    <div class="image-block">
-      <img src="assets/screenshot-14.webp" alt="Calendar+ Date Format Settings." />
-      <div class="image-caption">Calendar+ Date Format Settings.</div>
-    </div>
-    <div class="image-block">
-		<img src="assets/screenshot-15.webp" alt="Calendar+ Colors & Styles Settings." />
-		<div class="image-caption">Calendar+ Colors & Styles Settings.</div>
-	  </div>
-  </div>
-</div>
-<div class="instructions-panel">
-  <h3>🛠️ Instructions</h3>
-<h4>From WordPress Dashboard:</h4>
-<ul>
-  <li>Go to Plugins &gt; Add New, search for Calendar+, and click Install</li>
-  <li>Activate the plugin</li>
-</ul>
-
-<h4>Manual Installation:</h4>
-<ul>
-  <li>Download the plugin ZIP file</li>
-  <li>Go to Plugins &gt; Add New &gt; Upload Plugin, select the ZIP file, and click Install Now</li>
-  <li>Activate the plugin</li>
-</ul>
-
-<p>That's it! Just configure your settings as you see fit, and you're on your way to creating events in style.</p>
-
-<h4>Display the Calendar+ Calendar:</h4>
-<ul>
-  <li>To display a calendar, add the <strong><code>[CALENDAR_PLUS]</code></strong> shortcode on any WordPress page or post.</li>
-</ul>
-</div>
- <a href="https://my.eventespresso.com/wp-content/uploads/2025/03/events-calendar-plus-1.0.1.001.zip" class="download-button">Download Calendar+ for WordPress</a>
- <h3>Calendar+ is brought to you by the makers of <a href="https://eventespresso.com">Event Espresso</a> and <a href="https://eventsmart.com">Event Smart</a>.</h3>
-
 </body>
 </html>
