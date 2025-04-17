@@ -185,9 +185,9 @@ header {
 .image-grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(15, minmax(300px, 1fr));
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* overflow-x: auto; */
+    /* scroll-snap-type: x mandatory; */
 
     .image-block {
         position: relative;
